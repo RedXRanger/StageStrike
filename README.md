@@ -1,5 +1,5 @@
 # StageStrike
-A custom Cobalt Strike stager written in C
+A custom Cobalt Strike stager written in C.. is how the project started.
 
 There's a high possiblity that I haven't looked hard enough, but I have not found an open source stager that works with CS.
 So my goal is to make a stager that is simple and that can load into memory stages hosted by CS.
@@ -19,3 +19,5 @@ https://www.contextis.com/en/blog/a-beginners-guide-to-windows-shellcode-executi
     -RWX-Hunter Execution
     
 But for now it'll just be Dynamic Allocation of memory using Win32.
+
+
