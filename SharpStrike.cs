@@ -2,6 +2,11 @@
    Inspired by: https://github.com/RedXRanger/defcon27_csharp_workshop
                 https://github.com/rsmudge/metasploit-loader
                 https://www.contextis.com/en/blog/a-beginners-guide-to-windows-shellcode-execution-techniques
+                
+   For 32bit Compilation, just compile as any CPU (if you are using a CS 32bit stage)
+   For 64bit Com[ilation, you MUST create a new target type, make it 64bit then compile it as 64bit (if you are using staged 64bit in CS)
+   
+   Compiled in Visual Studio 2017
 */
 
 using System;
