@@ -2,7 +2,7 @@
 A custom Cobalt Strike stager written in C.. is how the project started.
 
 There's a high possiblity that I haven't looked hard enough, but I have not found an open source stager that works with CS.
-So my goal is to make a stager that is simple and that can load into memory stages hosted by CS.
+So my goal is to make a stager that is simple, and load stages hosted by CS in memory.
 This project was inspired by Mudges own Metasploit payload stager here: https://github.com/rsmudge/metasploit-loader
 And explained here https://blog.cobaltstrike.com/2013/06/28/staged-payloads-what-pen-testers-should-know/
 
