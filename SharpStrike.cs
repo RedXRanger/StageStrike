@@ -1,10 +1,13 @@
 /* 
-   Inspired by: https://github.com/RedXRanger/defcon27_csharp_workshop
+   Inspired by: https://github.com/mvelazc0/defcon27_csharp_workshop
                 https://github.com/rsmudge/metasploit-loader
                 https://www.contextis.com/en/blog/a-beginners-guide-to-windows-shellcode-execution-techniques
                 
    For 32bit Compilation, just compile as any CPU (if you are using a CS 32bit stage)
    For 64bit Com[ilation, you MUST create a new target type, make it 64bit then compile it as 64bit (if you are using staged 64bit in CS)
+   
+   You might want to add some headers to the webclient request. When I get the time ill prob do it myself.
+   This will also fail to stage if you have an invalid ssl cert for the site hosting the stage. 
    
    Compiled in Visual Studio Community edition 2019
    Uses .NET Framework 2.0
